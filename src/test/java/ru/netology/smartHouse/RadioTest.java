@@ -242,6 +242,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void NotMinTurnDownTheVolume() {
         Radio radio = new Radio();
