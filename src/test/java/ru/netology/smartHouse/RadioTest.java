@@ -252,4 +252,13 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void TestMaxStation() {
+        Radio radio = new Radio(20);
+        radio.setCurrentRadioStationNumber(19);
+        int expected = 19;
+        int actual = radio.getCurrentRadioStationNumber();
+        Assertions.assertEquals(expected, actual);
+    }
 }
